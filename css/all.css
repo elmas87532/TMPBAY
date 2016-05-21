@@ -1,0 +1,594 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/*-----------------------------------------------------------*/
+body {
+	text-align: center;
+}
+.top{
+	min-width: 1100px;
+	height: 10px;
+	background: #292929;
+}
+.wrap{
+	text-align: center;
+	width: 1100px;
+	margin: 0 auto;
+	padding: 0;
+	border: 0;
+}
+.header{
+	margin-bottom: 20px;
+	font-family: SimSun,"微軟正黑體";
+	float: left;
+	width: 1100px;
+}
+.logo{
+	float: left;
+	width: 310px;
+	/*position: relative;*/
+	margin-top: 45px;
+	margin-left: 30px;
+	text-align: center;
+}
+.logo img{
+	width: 280px;
+}
+.options{
+	margin-right: 30px;
+	width: 610px;
+	float: right;
+}
+.options li a{
+	float: right;
+	font-family: Trebuchet MS,"微軟正黑體";
+	font-size: 18px;
+	text-decoration: none;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-top: 60px;
+	font-weight: bold;
+	color: black;
+}
+.options li a:hover{
+	font-family: Trebuchet MS,"微軟正黑體";
+	text-decoration: none;
+	color: #01A5CA;
+}
+.options ul li ul{
+	width: 610px;
+	height: auto;
+	background: #FFC000;
+	border-radius: 25px;
+}
+.options ul li ul{
+	position: absolute;
+	margin-top: 110px;
+}
+.options ul li ul li{
+	margin-top: 0px;
+	clear: right;
+	float: left;
+	display: none;
+}
+.options ul li:hover ul li{
+	display: block;
+}
+.options ul li ul li a{
+	padding-top: 20px;
+	padding-bottom: 20px;
+	padding-left: 25px;
+	padding-right: 25px;
+	margin-top: 0px;
+	color: white;
+}
+.main_info{
+	font-family: Trebuchet MS,"微軟正黑體";
+	margin: 45px;
+	float: left;
+	width: 990px;
+	padding: 10px;
+	background: #292929;
+	text-align: center;
+}
+.main_info img{
+	margin-bottom: 9px;
+}
+.main_info a{
+	padding-top: 10px;
+	padding-bottom: 9px;
+	padding-left: 30px;
+	padding-right: 30px;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	background: -webkit-linear-gradient(#FFC000,#B78900);
+	background: -o-linear-gradient(#FFC000,#B78900);
+	background: -moz-linear-gradient(#FFC000,#B78900);
+	background: linear-gradient(#FFC000,#B78900);
+}
+.main_info a:hover{
+	color: black;
+	background: -webkit-linear-gradient(#B78900,#FFC000);
+	background: -o-linear-gradient(#B78900,#FFC000);
+	background: -moz-linear-gradient(#B78900,#FFC000);
+	background: linear-gradient(#B78900,#FFC000);
+}
+.info{
+	margin-top: 30px;
+	margin-bottom: 70px;
+	padding-left: 40px;
+	float: left;
+	font-family: Trebuchet MS,"微軟正黑體";
+}
+.gh2{
+	color: #92D050;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: Trebuchet MS,"微軟正黑體";
+	text-align: center;
+}
+.bh2{
+	color: #00B0F0;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: Trebuchet MS,"微軟正黑體";
+	text-align: center;
+}
+.info ul{
+	margin-top: 10px;
+	list-style-type: decimal;
+	font-family: Trebuchet MS,"微軟正黑體";
+}
+.info li{
+	width: 200px;
+	padding: 5px;
+	float: left;
+}
+.info li img{
+	width: 100px;
+}
+.info li a{
+	color: #292929;
+	text-decoration: none;
+}
+.info li a:hover{
+	color: #FFC000;
+}
+.ri_un{
+	color: #707070;
+}
+.footer{
+	font-size: 16px;
+	font-family: Trebuchet MS,"微軟正黑體";
+	color: #292929;
+	line-height: 28px;
+	margin-top: 100px;
+	margin-bottom: 40px;
+	float: left;
+	width: 1100px;
+	text-align: center;
+}
+/*-----------------login----------------*/
+#login{
+	position: absolute;
+	width: 80px;
+	height: 80px;
+	right: 0px;
+	background: #FFC000;
+	top: 10px;
+}
+#login a{
+	/*width: 50px;
+	/*position: fixed;*/
+	/*position: absolute;
+	right: 0px;
+	background: #FFC000;*/
+	color: white;
+	font-weight: bold;
+	font-family: Trebuchet MS,"微軟正黑體";
+	padding: 15px;
+	text-decoration: none;
+	display: block;
+}
+#login a:hover{
+	background: white;
+	color: #FFC000;
+}
+/*-----------------CART-----------------*/
+.cart{
+	float: left;
+	font-family: Trebuchet MS,"微軟正黑體";
+	padding: 50px;
+	text-align: center;
+	height: auto;
+	line-height: 48px;
+}
+.cart table{
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.cart th{
+	width: 180px;
+	background: #292929;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.cart tr { 
+  border-bottom:1px solid #000; 
+}
+.cart td{
+	vertical-align: middle;
+}
+.cart p{
+	margin-bottom: 60px;
+}
+.cart img{
+	width: 120px;
+}
+.cart a{
+	color: #292929;
+	text-decoration: none;
+	font-weight: bold;
+}
+.cart a:hover{
+	color: #FFC000;
+}
+.cart form{
+	width: 1000px;
+	text-align: center;
+}
+.next{
+	line-height: 32px;
+	font-family: Trebuchet MS,"微軟正黑體";
+}
+.next input[type="submit"]{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 60px;
+	padding-right: 60px;
+	color: white;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: bold;
+	font-family: Trebuchet MS,"微軟正黑體";
+	background: -webkit-linear-gradient(#FFC000,#B78900);
+	background: -o-linear-gradient(#FFC000,#B78900);
+	background: -moz-linear-gradient(#FFC000,#B78900);
+	background: linear-gradient(#FFC000,#B78900);
+	border: 0px;
+	margin-top: 50px;
+}
+.next input:hover[type="submit"]{
+	color: black;
+	background: -webkit-linear-gradient(#B78900,#FFC000);
+	background: -o-linear-gradient(#B78900,#FFC000);
+	background: -moz-linear-gradient(#B78900,#FFC000);
+	background: linear-gradient(#B78900,#FFC000);
+}
+.next a{
+	padding-top: 12px;
+	padding-bottom: 12px;
+	padding-left: 60px;
+	padding-right: 60px;
+	color: white;
+	text-decoration: none;
+	font-size: 28px;
+	font-weight: bold;
+	background: -webkit-linear-gradient(#FFC000,#B78900);
+	background: -o-linear-gradient(#FFC000,#B78900);
+	background: -moz-linear-gradient(#FFC000,#B78900);
+	background: linear-gradient(#FFC000,#B78900);
+}
+.next a:hover{
+	color: black;
+	background: -webkit-linear-gradient(#B78900,#FFC000);
+	background: -o-linear-gradient(#B78900,#FFC000);
+	background: -moz-linear-gradient(#B78900,#FFC000);
+	background: linear-gradient(#B78900,#FFC000);
+}
+/*-------------------------shop-------------------------*/
+.product{
+	width: 1100px;
+	text-align: center;
+	float: left;
+	margin-top: 50px;
+}
+.each_pro{
+	width: 250px;
+	float: left;
+	line-height: 28px;
+	margin-bottom: 50px;
+	margin-right: 20px;
+}
+.each_pro img{
+	width: 200px;
+}
+.each_pro a{
+	color: #292929;
+	text-decoration: none;
+}
+.each_pro a:hover{
+	color: #FFC000;
+}
+
+.pro_addtocart a{
+	color: white;
+	padding-top: 3px;
+	padding-bottom: 3px;
+	padding-left: 5px;
+	padding-right: 5px;
+	background: #92D050;
+	font-size: 16px;
+	border-radius: 10px;
+}
+.pro_addtocart a:hover{
+	color: white;
+	background: #FFC000;
+}
+/*----------------rank----------------*/
+.rank{
+	font-family: Trebuchet MS,"微軟正黑體";
+}
+.rank table{
+	margin-top: 60px;
+	margin-bottom: 30px;
+}
+.rank th{
+	width: 180px;
+	background: #292929;
+	font-weight: bold;
+	color: white;
+	font-size: 20px;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
+.rank td{
+	vertical-align: middle;
+}
+.rank td img{
+	width: 150px;
+}
+.rank ul{
+	list-style-type:none;
+}
+.rank li{
+	width: 10px;
+}
+.rank li a{
+	float: left;
+	text-decoration: none;
+	color: #292929;
+}
+.rank a:hover{
+	color: #FFC000;
+}
+.like a{
+	padding: 5px;
+	padding-left: 10px;
+	padding-right: 10px;
+	border-radius: 15px;
+	color: white;
+	background: #FFC000;
+	text-decoration: none;
+}
+.like a:hover{
+	color: white;
+	background: #00B0F0;
+}
+.dislike a{
+	padding: 5px;
+	border-radius: 15px;
+	color: white;
+	background: #292929;
+	text-decoration: none;
+}
+.dislike a:hover{
+	color: white;
+	background: #92D050;
+}
+.pages{
+	text-align: center;
+	margin-left: 43%;
+}
+.pages li{
+	float: left;
+	margin-right: 5px;
+}
+/*----------------design*----------------*/
+
+#dCanvas,#dLine { clear: both; float: left; margin-left: 50px; margin-right: 20px;}
+#dPallete{
+	margin-left: 50px;
+}
+.option{
+    float: left; width: 20px; height: 20px; border: 2px solid #cccccc;
+    margin-right: 4px; margin-bottom: 4px;
+}
+.active { border: 2px solid black; }
+.lw { text-align: center; vertical-align: middle; }
+
+img.output { /*border: 1px solid green;*/ margin-top: 110px; margin-right: 70px; width: 300px;}
+#dOutput{
+	float: left;
+	background-image: url(../img/bgbay.png);
+	/*background: black;*/
+	width: 500px;
+	height: 500px;
+}
+#cSketchPad { cursor: arrow; }
+
+/*----------------768---------------*/
+@media only screen and (max-width: 768px){
+	.top{
+		width: 100%;
+		min-width: 0px;
+	}
+	.wrap{
+		width: 100%;
+	}
+	.header{
+		width: 100%;
+	}
+	.logo{
+		width: 100%;
+		margin-left: 0px;
+	}
+
+	.options{
+		margin-right: 0px;
+		width: 100%;
+		float: left;
+	}
+
+	.options li a{
+		width: 100%;
+		margin: 0px;
+	}
+	.options ul li ul{
+		width: 100%;
+	}
+	.options ul li ul{
+		position: relative;
+		margin-top: 0px;
+		float: left;
+	}
+	.options ul li ul li{
+		margin-top: 0px;
+		width: 100%;
+		clear: right;
+		float: left;
+		display: none;
+	}
+	.options ul li:hover ul li{
+		display: block;
+	}
+
+	.main_info{
+		width: 100%;
+		margin: 0px;
+		padding: 0px;
+	}
+	.main_info img{
+		width: 100%;
+	}
+	.main_info a{
+		display: none;
+	}
+	.info li{
+		width: 45%;
+	}
+	.info li img{
+		width: 70px;
+	}
+	.footer{
+		width: 100%;
+	}
+	/*cart*/
+	.cart{
+		padding: 20px;
+	}
+	.cart th{
+		width: 15%;
+	}
+	.cart img{
+		width: 100%;
+	}
+
+	/*shop*/
+	.product{
+	width: 100%;
+}
+.each_pro{
+	width: 50%;
+}
+.each_pro img{
+	width: 70%;
+}
+
+	/*rank*/
+
+	.rank th{
+		width: 10%;
+		font-size: 18px;
+	}
+	.rank td{
+		font-size: 18px;
+	}
+	.rank td img{
+		width: 100%;
+	}
+	.m_none{
+		display: none;
+	}
+	.pages{
+		width: 100%;
+		margin-left: 37%;
+	}
+	.pages li{
+		float: left;
+	}
+}
+/*----------------320---------------*/
+@media only screen and (max-width: 320px){
+.info li{
+		width: 100%;
+	}
+	.info li img{
+		width: 70px;
+	}
+	/*shop*/
+	.each_pro{
+	width: 100%;
+}
+
+	/*rank*/
+	.pages{
+		margin-left: 28%;
+	}
+}
